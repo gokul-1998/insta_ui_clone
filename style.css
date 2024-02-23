@@ -1,0 +1,108 @@
+*{
+    margin:0;
+     /* this will remove  the default margin */
+    padding:0;
+    /* this will remove the default padding */
+    /* this will also remove the bullet points from the list  */ 
+     
+    box-sizing:border-box;
+    /* this will include the padding and border in the width and height of the element */
+    /* for more info visit https://www.w3schools.com/css/css3_box-sizing.asp */
+    
+    font-family: sans-serif;
+}
+
+/* Header */
+
+header{
+    display:flex;
+    /*  this will make the header a flex container , so that we can use the flex properties 
+    to align the items inside the header , for more info visit https://www.w3schools.com/css/css3_flexbox.asp */
+
+    /* this will also make the header from a block level element to an inline level element ,
+    making it possible to align the items inside the header horizontally.
+    for more info visit https://www.w3schools.com/css/css_inline-block.asp */
+
+    justify-content:space-between;
+    /* this will align the items inside the header to the left and right of the header 
+    this will also make the items inside the header to take the full width of the header 
+    */
+    align-items: center;
+    /* this will align the items inside the header vertically */
+
+    padding: 10px 18%;
+    /* this will add padding to the header , 10px from the top and bottom and 18% from the left and right */
+    border-bottom: 1px solid rgba(219,219,219,1);
+    /* this will add a border to the bottom of the header , 1px thick and the color is a light gray */
+    background-color: white;
+    /* this will add a background color to the header */
+}
+
+header .logo{
+    height: 29px;
+}
+
+header .logo img{
+    height: 100%;
+    /* this will make the image take the full height of the parent element */
+    object-fit: contain;
+    /* this will make the image fit inside the parent element */
+    /* for more info visit https://www.w3schools.com/css/css3_object-fit.asp */
+     /* if we  use object-fit:cover; the image will cover the parent element 
+      
+       */
+}
+
+header .search-box{
+    width: 250px;
+    background-color: rgba(239,239,239,1);
+
+    padding : 3px 16px;
+    /* this will add padding to the search box , 3px from the top and bottom and 16px from the left and right */
+    display: flex;
+    /* this will make the search box a flex container , so that we can use the flex properties,
+    to align the items inside the search box */
+    align-items: center;
+    /* this will align the items inside the search box vertically */
+    border-radius: 8px;
+}
+
+header .search-box input{
+ height: 30px;
+    /* this will add height to the input field */
+    border: none;
+    /* this will remove the default border from the input field */
+    outline: none;
+    /* this will remove the default outline from the input field 
+    for more info visit https://www.w3schools.com/css/css_outline.asp */
+    
+    background-color: rgba(239,239,239,1);
+    /* this will add a background color to the input field */
+    padding-left: 10px;
+    /* this will add padding to the input field from the left */
+    font-size: 15px;
+    /* this will add font size to the input field */
+    color: #8e8e8e;
+    /* this will add color to the input field */
+}
+
+header nav ul{
+    list-style: none;
+    /* this will remove the bullet points from the list */
+
+    display: flex;
+    /* this will make the list a flex container , so that we can use the flex properties
+    to align the items inside the list */
+}
+
+header nav ul li{
+    margin-right: 20px;
+    /* this will add margin to the left of the list items */
+}
+header nav ul li a img{
+    height: 22px;
+    width: 22px;
+    /* this will add height to the image */
+
+    border-radius: 50%;
+}
