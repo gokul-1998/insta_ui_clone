@@ -36,6 +36,11 @@ header{
     /* this will add a border to the bottom of the header , 1px thick and the color is a light gray */
     background-color: white;
     /* this will add a background color to the header */
+    position: sticky;
+    top: 0;
+    /* the above two lines will make the header to stick to the top of the page when we scroll down the page */
+    z-index: 10;
+    /* this will make the header to be on top of the other elements on the page */
 }
 
 header .logo{
@@ -178,6 +183,121 @@ section {
     color: #262626;
 }
 
+/* Posts */
+
+.posts{
+    margin : 25px 0;
+    /* this will add margin to the top and bottom of the posts */
+    background-color: white;
+    border: 1px solid rgba(219,219,219,1);
+    border-radius: 3px;
+
+}
+.posts .post-title{
+    display:flex;
+    /* this will make the post title a flex container , so that we can use the flex properties
+    to align the items inside the post title */
+    justify-content: space-between;
+    /* this will align the items inside the post title to the left and right of the post title */
+    align-items: center;
+    /* this will align the items inside the post title vertically */
+    padding: 16px;
+
+}
+
+.posts .post-title .post-left{
+    display: flex;
+    align-items: center;
+    /* this will align the items inside the post left to the center of the post left */
+}
+.posts .post-title .post-left .image{
+    margin-right: 15px;
+}
+
+.posts .post-title .post-left .image img{
+    border-radius:50%;
+    object-fit: contain;
+}
+
+.posts .post-title .post-left .details .name{
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+
+.posts .post-content img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.posts .post-footer{
+    display:flex;
+    justify-content: space-between;
+    padding:16px;   
+}
+
+.posts .post-footer .like-share-comment i{
+    font-size:22px;
+    margin-right:10px;
+}
+
+.posts .post-footer .save{
+    font-size:22px;
+}
+
+.posts .post-footer-content{
+    padding:0 16px 16px 16px;
+
+}
+
+.posts .post-footer-content p{
+    margin-bottom: 3px;
+}
+
+.posts .post-footer-content .likes{
+    margin-bottom: 8px;
+}
+
+.posts .post-footer-content .name{
+    font-weight:600;
+}
+
+.posts .post-footer-content span{
+    margin-left:10px;
+    font-weight: normal;
+}
+
+.posts .post-footer-content .posting-time{
+    font-size:10px;
+    margin-top:6px;
+}
+
+.posts .add-comment{
+    padding: 16px;
+    border-top: 1px solid #efefef;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.posts .add-comment .left-side{
+    display:flex;
+    align-items: center;
+}
+
+.posts .add-comment .left-side i{
+   font-size: 22px;
+   margin-right:15px;
+}
+
+.posts .add-comment .left-side input{
+    width : 100%;
+    outline: none;
+    border: none;
+    /* this will remove the default border from the input field */
+    font-size: 14px;
+}
+
 
 
 
@@ -190,4 +310,59 @@ section {
 .right-side {
     width: 35%;
     /* this will add margin to the left of the right side */
+    margin-top:15px;
+    position:fixed;
+    right:30px;
+}
+
+.right-side .profile-title{
+    display: flex;
+    align-items: center;
+}
+
+.right-side .profile-title .profile-left{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+.right-side .profile-title .profile-left .image img{
+    border-radius: 50%;
+    margin-right:15px;
+}
+
+.right-side .profile-title .profile-left .details .name{
+    padding-bottom: 3px;
+}
+
+
+.suggestions{
+    display: flex;
+    margin-top:25px;
+    margin-bottom: 20px;
+}
+
+.suggestions .p{
+    margin-right: 90px;
+}
+
+.suggestion-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.suggestion-title .suggestion-left{
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.suggestion-title .suggestion-left .image img{
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover   ;
+}
+
+.suggestion-title .suggestion-left .details .name{
+    padding-bottom: 3px;
 }
