@@ -96,13 +96,98 @@ header nav ul{
 }
 
 header nav ul li{
-    margin-right: 20px;
-    /* this will add margin to the left of the list items */
+    margin-right: 30px;
+    /* this will add margin to the right of the list items */
 }
+
+header nav ul li:last-child{
+    /*  to make the margin  for the last element in  the list element */
+    margin-right: 0;
+
+}
+
 header nav ul li a img{
     height: 22px;
     width: 22px;
     /* this will add height to the image */
 
     border-radius: 50%;
+    /* this will add border radius to the image , making it a circle */
+
+    object-fit: cover;
+    /* this will make the image cover the parent element , for more info visit https://www.w3schools.com/css/css3_object-fit.asp */
+
+}
+
+header nav ul li a i{
+    font-size: 22px;
+    /* this will add font size to the icon  */
+
+    color:rgba(38,38,38,1);
+}
+
+/*  Body Section */
+
+section {
+    padding : 30px 18%;
+    /* this will add padding to the section , 30px from the top and bottom and 18% from the left and right */
+    background-color: #fafafa;
+    display: flex;
+    /* this will make the section a flex container , so that we can use the flex properties
+    to align the items inside the section */
+}
+
+.left-side{
+    width: 65%;
+
+}
+.story{
+    display: flex;
+    /* this will make the story a flex container , so that we can use the flex properties
+    this  will also arrange the content in a row */
+
+    padding: 16px;
+    background-color: white;
+    border: 1px solid rgba(219,219,219,1);
+    border-radius: 3px;
+}
+
+.story .stories{
+    width: 17%;
+    /* this will add width to the stories ,  so that it wont */
+}
+
+.story .stories a img{
+    border-radius:50%;
+    /* this will add border radius to the image , making it a circle */
+    border: 2px solid #c62d8f;
+    padding: 1px;
+    object-fit: cover;
+    /* this will make the image cover the parent element , for more info visit https://www.w3schools.com/css/css3_object-fit.asp */
+    /* basically it  will make the  image fixed to the parent element */
+}
+
+.story .stories p{
+    width: 90%;
+    overflow: hidden;
+    /* this will hide the content that overflows the parent element */
+    white-space: nowrap;
+    /* this will make the content not to wrap to the next line */
+    text-overflow: ellipsis;
+    /* this will add an ellipsis(...) to the content that overflows the parent element */
+    color: #262626;
+}
+
+
+
+
+
+
+
+
+
+
+.right-side {
+    width: 35%;
+    /* this will add margin to the left of the right side */
 }
