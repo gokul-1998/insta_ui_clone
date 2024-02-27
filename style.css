@@ -341,10 +341,13 @@ section {
     margin-bottom: 20px;
 }
 
-.suggestions .p{
+.suggestions p{
     margin-right: 90px;
 }
 
+.suggestions p:last-child{
+    margin-right: 0px;
+}
 .suggestion-title{
     display: flex;
     align-items: center;
@@ -365,4 +368,41 @@ section {
 
 .suggestion-title .suggestion-left .details .name{
     padding-bottom: 3px;
+}
+
+@media (max-width:992px){
+    header  {
+        padding: 10px 20px;
+    }
+
+    section .left-side{
+        width: 100%;
+        /*  this means left-side section will occupy the  entire screen */
+        /* earlier we kept this as 65%, this  also means we wont see right side suggestions anymore */
+    }
+
+    section .right-side{
+        visibility: hidden;
+        /* display: none; */
+        /* we can use any one of the  above */
+    }
+
+}
+
+@media (max-width:768px){
+    header .search-box{
+        display:none;
+    }
+    section{
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width:576px){
+    .story .stories{
+        width: 25%;
+    }
+    header nav ul li {
+        margin-right: 10px;
+    }
 }
