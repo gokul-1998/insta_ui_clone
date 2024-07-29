@@ -34,7 +34,7 @@ header{
     /* this will add padding to the header , 10px from the top and bottom and 18% from the left and right */
     border-bottom: 1px solid rgba(219,219,219,1);
     /* this will add a border to the bottom of the header , 1px thick and the color is a light gray */
-    background-color: white;
+    background-color: pink;
     /* this will add a background color to the header */
     position: sticky;
     top: 0;
